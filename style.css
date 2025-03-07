@@ -1,0 +1,162 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image Covering Full Screen */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8303368.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header (Navbar Section) */
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.logo:hover {
+    color: cyan;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    color: cyan;
+    transform: translateY(3px);
+}
+
+/* Home Section */
+.Home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;
+}
+
+/* Text Content */
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.home-content h3 {
+    color: aqua;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.home-content p {
+    color: ghostwhite;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.home-btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.home-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s;
+}
+.home-btn a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: cyan;
+}
+
+/* 🌐 Responsive Design - Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+    .navbar {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .navbar a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .Home {
+        padding: 5% 5%;
+        text-align: center;
+        justify-content: center;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content h3 {
+        font-size: 18px;
+    }
+    .home-content p {
+        font-size: 14px;
+    }
+    .home-btn {
+        justify-content: center;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 15px 5%;
+    }
+    .Home {
+        padding: 5% 5%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
